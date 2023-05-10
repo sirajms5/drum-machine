@@ -91,7 +91,8 @@ class Box extends React.Component {
 
     render() {
         return (
-            <div onClick={this.playSound} className="drum-pad" style={{ border: `1px solid ${this.props.color}`, boxShadow: `0px 15px 24px -14px ${this.props.color}, inset 0px -15px 24px -14px ${this.props.color}` }}>
+            <div onClick={this.playSound} className="drum-pad" style={{ border: `1px solid ${this.props.color}`,
+            boxShadow: `0px 15px 24px -14px ${this.props.color}, inset 0px -15px 24px -14px ${this.props.color}` }}>
                 {this.props.text}
                 <audio class="clip" id={this.props.text} ref={this.audio} src={this.props.audio}> </audio>
             </div>
